@@ -81,7 +81,7 @@ object EnsimeBuild extends Build {
   ) settings (
       libraryDependencies ++= Seq(
         // 2.1.1 not available https://github.com/sirthias/parboiled2/issues/160
-        "org.parboiled" %% "parboiled" % "2.1.0" intransitive () exclude ("com.chuusai", "shapeless_2.10.4")
+        "org.parboiled" %% "parboiled" % "2.1.1" intransitive () exclude ("com.chuusai", "shapeless_2.10.4")
       ) ++ Sensible.shapeless(scalaVersion.value)
     )
 
